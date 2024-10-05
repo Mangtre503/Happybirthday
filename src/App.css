@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.web {
+  background-color: #deeef8;
+  width: 100vw; /* Chiếm 100% chiều rộng của viewport */
+  height: 100vh; /* Chiếm 100% chiều cao của viewport */
+  font-family:'Courier New', Courier, monospace;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
 }
 
-.App-link {
-  color: #61dafb;
+.web .part1 {
+  display: flex;
+  justify-content: center; /* Căn giữa phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa phần tử theo chiều dọc */
+  background-image: url('./ghibli.jpg'); /* Đảm bảo đường dẫn ảnh chính xác */
+  background-size: cover; /* Đảm bảo hình ảnh phủ kín khối */
+  background-position: center; /* Đặt hình nền ở giữa */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  height: 60%;
+  width: 70%;
+  background-color: rgba(199, 236, 245, 0.668); /* Đây sẽ được thay thế bởi ảnh nền */
+  border-radius: 20px; /* Tạo bo góc cho khối */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.web .part1 .log {
+  margin: 50px;
+  height: auto;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Màu nền có độ trong suốt */
+  display: flex; /* Sử dụng Flexbox */
+  flex-direction: column; /* Đặt các phần tử con theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.web .part1 .log #password {
+  height: 30px;
+  border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.web .part1 .log #submit_password {
+  height: 30px;
+  border-radius: 20px;
+  width: 100px;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  transition: background-color 0.3s ease;
+}
+
+.web .part1 .log #submit_password:hover {
+  background-color: rgba(0, 0, 139, 0.738); /* Màu nền khi rê chuột đến */
+  color: white; /* Đổi màu chữ khi rê chuột đến */
 }

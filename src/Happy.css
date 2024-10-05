@@ -1,0 +1,63 @@
+.web_happy_page {
+  display: flex;
+  justify-content: center; /* Căn giữa phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa phần tử theo chiều dọc */
+  background-image: url('./sky.jpg'); /* Đảm bảo đường dẫn ảnh chính xác */
+  background-size: cover; /* Đảm bảo hình ảnh phủ kín khối */
+  background-position: center; /* Đặt hình nền ở giữa */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  height: 60%;
+  width: 70%;
+  background-color: blue; /* Đây sẽ được thay thế bởi ảnh nền */
+  border-radius: 20px; /* Tạo bo góc cho khối */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ */
+  display: flex;
+  flex-direction: column;
+}
+.web_happy_page .head_of_happypage {
+    display: flex;
+    flex-direction: column;
+}
+.web_happy_page .head_of_happypage #choose{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height:30px;
+    border-radius: 20px;
+    border-color: #ffffff00;
+}
+.web_happy_page .head_of_happypage #error{
+    margin-bottom: 20px;
+    height:30px;
+    border-radius: 20px;
+    border-color: #ffffff00;
+}
+.web_happy_page  #st_about_you{
+   padding-left: 20%;
+   padding-right: 20%;
+   text-align: justify;
+   color:#deeef85b;
+}
+.web_happy_page  .Go_to_Gift #Gift{
+    margin-bottom: 20px;
+    height:30px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: #f6f2f200;
+    background-color: rgba(233, 144, 203, 0.458);
+ }
+ #Gift:hover {
+    background-color: rgb(230, 141, 238); 
+    color: rgb(243, 236, 236); 
+  }
+ #audioStart{
+    margin-bottom: 20px;
+    height:30px;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    background-color: rgba(240, 248, 255, 0.312);
+ }
+#audioStart:hover {
+    background-color: rgba(124, 195, 200, 0.668); 
+    color: rgb(254, 251, 252); 
+  }
+ 
